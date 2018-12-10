@@ -1,9 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'House Finder',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `lbxzx4zcp9es`,
+        accessToken: '33b345371cdbd0a2dd94ec82e299b27318ed79ac5da7c46d3b419ee098bc5863',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

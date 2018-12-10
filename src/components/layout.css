@@ -622,3 +622,61 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__col {
+  width: 230px;
+}
+
+.grid__col:not(:first-child) {
+  margin-left: 30px;
+}
+
+.house-page__image,
+.house-page__info{
+  margin-bottom: 20px;
+}
+
+.house-page__title {
+  font-family: sans-serif;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.house-page__businessType {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 15px;
+}
+
+.house-page__price {
+  font-family: sans-serif;
+  font-size: 26px;
+}
+
+.back {
+  display: inline-block;
+  background: rebeccapurple;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  padding: 10px 20px 10px 10px;
+  text-decoration: none;
+  position: relative;
+  margin-left: 23px;
+}
+
+.back:before {
+  content: '';
+  position: absolute;
+  height: 46px;
+  border: 23px solid transparent;
+  border-right: 23px solid rebeccapurple;
+  top: 0;
+  left: -46px;
+}

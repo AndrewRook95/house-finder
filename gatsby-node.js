@@ -45,7 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title: edge.node.title,
                 price: edge.node.price,
                 businessType: edge.node.businessType,
-                description: edge.node.description,
+                description: edge.node.description.content[0].content[0].value,
               },
             })
           })

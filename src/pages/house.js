@@ -16,7 +16,7 @@ const SecondPage = (data) => (
         <div className="house-page__price">{data.pageContext.businessType === 'Сдача' ? data.pageContext.price + ' руб./мес.' : data.pageContext.price + ' руб.'}</div>
       </div>
       <h3>Описание</h3>
-      <p>{data.pageContext.description.content[0].content[0].value}</p>
+      <p>{data.pageContext.description}</p>
     </div>
   </Layout>
 )
